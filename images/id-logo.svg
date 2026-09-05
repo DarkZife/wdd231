@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="title desc">
+  <title id="title">LD Purple Logo</title>
+  <desc id="desc">A purple LD monogram with a transparent diagonal slit separating the L and D.</desc>
+
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="55%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- L -->
+  <path d="
+    M35 25
+    H65
+    V115
+    H111
+    L92 140
+    H35
+    Z"
+    fill="url(#purpleGradient)"/>
+
+  <!-- D -->
+  <path d="
+    M101 25
+    H145
+    C190 25 215 48 215 82.5
+    C215 117 190 140 145 140
+    H104
+    L123 115
+    H142
+    C170 115 185 103 185 82.5
+    C185 62 170 50 142 50
+    H101
+    Z"
+    fill="url(#purpleGradient)"/>
+</svg>
