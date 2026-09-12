@@ -1,0 +1,116 @@
+@media screen and (min-width: 640px) {
+
+    header {
+        grid-template-columns: auto 1fr auto;
+        gap: 1rem;
+    }
+
+    .branding {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
+    }
+
+    .header-buttons {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .navigation li {
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-content {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .member-card img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .business-info p {
+        font-size: 0.8rem;
+    }
+
+    #members.list .member-card {
+        display: grid;
+        grid-template-columns: 1.3fr 3.7fr;
+        align-items: center;
+        padding: 0.7rem 1rem;
+        min-height: 0;
+    }
+
+    #members.list .member-card h2 {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #members.list .card-content {
+        display: block;
+        padding: 0;
+    }
+
+    #members.list img {
+        display: none;
+    }
+
+    #members.list .business-info {
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            minmax(0, 1fr)
+            minmax(0, 2fr);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #members.list .business-info p {
+        margin: 0;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin: 0;
+    }
+}

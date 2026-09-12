@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Page</title>
 
+    <meta name="description" content="Business directory for the Salt Lake City Chamber of Commerce.">
+    <meta name="author" content="Logan Dawes">
 
+    <meta property="og:title" content="Salt Lake City Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore businesses that are members of the Salt Lake City Chamber of Commerce.">
+    <meta property="og:image" content="https://darkzife.github.io/wdd231/chamber/images/coc-logo.webp">
+    <meta property="og:url" content="https://darkzife.github.io/wdd231/chamber/directory.html">
+
+    <title>Salt Lake City Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/beehive.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directorysmall.css">
+    <link rel="stylesheet" href="styles/directorylarge.css">
+
+    <script src="scripts/directory.js" defer></script>
 
 </head>
 
 <body>
 
+    <header>
 
+        <div class="branding">
+            <img src="images/coc-logo.png" alt="Salt Lake City Chamber logo">
+            <span>Salt Lake City Chamber of Commerce</span>
+        </div>
+
+        <div class="header-buttons">
+            <button id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+            <button id="menu" aria-label="Open navigation menu">☰</button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Directory</h1>
+
+        <div class="grid-btns">
+            <button id="grid-btn" aria-label="Grid view">Grid</button>
+            <button id="list-btn" aria-label="List view">List</button>
+        </div>
+
+        <div class="grid" id="members"></div>
+
+
+    </main>
+
+    <footer>
+
+
+        <div>
+            <strong>Salt Lake City Chamber of Commerce</strong>
+            <p>201 South Main Street</p>
+            <p>Salt Lake City, Utah 84111</p>
+            <p>info@exampleslcchamber.org</p>
+            <p>(000) 000-0000</p>
+        </div>
+        
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/" aria-label="A link to the facebook page.">
+                <img src="images/facebook.png" alt="Facebook logo">
+            </a>
+            
+            <a href="https://www.linkedin.com" aria-label="A link to the LinkedIn page.">
+                <img src="images/linkedin.png" alt="LinkedIn logo">
+            </a>
+
+            <a href="https://www.instagram.com/" aria-label="A link to the Instagram page.">
+                <img src="images/instagram.png" alt="Instagram logo">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Logan Dawes</p>
+            <p>&copy; <span id="currentYear"></span> Salt Lake City Chamber of Commerce</p>
+            <p id="lastModified">Last modified:</p>
+        </div>
+
+    </footer>
     
 </body>
 

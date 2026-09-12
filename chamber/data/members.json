@@ -1,0 +1,81 @@
+{
+    "businesses": [
+        {
+            "name": "City Creek Center",
+            "address": "50 S Main St, Salt Lake City, UT 84101",
+            "phone": "(801) 521-2012",
+            "website": "https://shopcitycreekcenter.com/",
+            "email": "info@testcitycreek.com",
+            "image": "citycreek.jpg",
+            "membership": 3,
+            "description": "A major shopping and dining destination in downtown Salt Lake City."
+        },
+
+        {
+            "name": "The Gateway",
+            "address": "400 W 200 S, Salt Lake City, UT 84101",
+            "phone": "(801) 456-0000",
+            "website": "https://atthegateway.com/?y_source=1_MTg3MjA4MTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "email": "info@testgateway.com",
+            "image": "gateway.jpg",
+            "membership": 2,
+            "description": "A downtown destination featuring shopping, dining, entertainment, and events."
+        },
+
+        {
+            "name": "Clark Planetarium",
+            "address": "110 S 400 W, Salt Lake City, UT 84101",
+            "phone": "(385) 468-7827",
+            "website": "https://www.saltlakecounty.gov/clark-planetarium",
+            "email": "info@testclarkplanetarium.com",
+            "image": "planetarium.jpg",
+            "membership": 2,
+            "description": "A science museum and planetarium featuring space exhibits and theater experiences."
+
+        },
+
+        {
+            "name": "Salt Palace Convention Center",
+            "address": "100 S West Temple, Salt Lake City, UT 84101",
+            "phone": "(385) 468-2222",
+            "website": "https://www.visitsaltlake.com/salt-palace-convention-center",
+            "email": "info@testsaltpalace.com",
+            "image": "salt-palace.jpg",
+            "membership": 3,
+            "description": "A large downtown convention center hosting conferences, events, and exhibitions."
+        },
+
+        {
+            "name": "Wayne Enterprises",
+            "address": "300 Gotham Way, Salt Lake City, UT 84101",
+            "phone": "(555) 555-1001",
+            "website": "https://example.com/wayne",
+            "email": "info@testwayne.com",
+            "image": "wayne-tower.png",
+            "membership": 3,
+            "description": "A fictional technology, transportation, and industrial corporation."
+        },
+
+        {
+            "name": "Stark Industries",
+            "address": "740 Arc Reactor Drive, Salt Lake City, UT 84104",
+            "phone": "(555) 555-2002",
+            "website": "https://example.com/stark",
+            "email": "info@teststark.com",
+            "image": "stark-industries.png",
+            "membership": 3,
+            "description": "A fictional advanced technology and clean-energy company."
+        },
+
+        {
+            "name": "Oscorp",
+            "address": "1250 Genome Way, Salt Lake City, UT 84115",
+            "phone": "(555) 555-3003",
+            "website": "https://example.com/oscorp",
+            "email": "info@testoscorp.com",
+            "image": "oscorp.png",
+            "membership": 1,
+            "description": "A fictional biotechnology and advanced research company."
+        }
+    ]
+}

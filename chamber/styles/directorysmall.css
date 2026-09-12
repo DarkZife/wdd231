@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5b2487;
+    --secondary-color: #f1eaf6;
+    --accent-color: #c9a7e8;
+    --background-color: #ffffff;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --border-color: #cccccc;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.branding img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+.branding span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#theme-toggle,
+#menu {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+#theme-toggle:hover,
+#menu:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+}
+
+nav {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--accent-color);
+    color: #111111;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+}
+
+h1 {
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.grid-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.grid-btns button {
+    padding: 0.6rem 1.25rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.grid-btns button:hover {
+    background-color: var(--accent-color);
+    color: #111111;
+}
+
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    overflow: hidden;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.member-card h2 {
+    margin: 0;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.member-card img {
+    width: 85px;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+}
+
+.business-info {
+    min-width: 0;
+    text-align: left;
+}
+
+.business-info p {
+    margin: 0.35rem 0;
+    font-size: 0.82rem;
+    overflow-wrap: anywhere;
+}
+
+.business-info strong {
+    font-size: 0.8rem;
+}
+
+.fake-link {
+    color: var(--primary-color);
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#members.list .member-card {
+    display: block;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#members.list .member-card:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+#members.list .member-card h2 {
+    margin: 0 0 0.5rem;
+    padding: 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#members.list .card-content {
+    display: block;
+    padding: 0;
+}
+
+#members.list img {
+    display: none;
+}
+
+#members.list .business-info {
+    display: block;
+}
+
+#members.list .business-info p {
+    margin: 0.25rem 0;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-media img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+body.dark {
+    --background-color: #121212;
+    --card-color: #211827;
+    --text-color: #f3f3f3;
+    --border-color: #5f4a6d;
+    --secondary-color: #302238;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark h1 {
+    color: var(--accent-color);
+}
+
+body.dark .member-card {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+body.dark .member-card h2 {
+    color: var(--accent-color);
+}
+
+body.dark .fake-link {
+    color: #d7b7f2;
+}
+
+body.dark #members.list .member-card:nth-child(even) {
+    background-color: var(--secondary-color);
+}
