@@ -72,14 +72,12 @@
 
     .hero-btns {
         flex-direction: row;
-
         justify-content: center;
     }
 
-    .join-btn,
-    .discover-btn {
+    #join-btn,
+    #discover-btn {
         width: auto;
-
         min-width: 180px;
     }
 

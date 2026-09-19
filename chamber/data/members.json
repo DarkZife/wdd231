@@ -13,22 +13,22 @@
             "events": [
                 {
                     "id": 1,
-                    "title": "test",
-                    "date": "12/31/2026",
-                    "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "title": "Fountain Shows",
+                    "date": "Every Day at City Creek",
+                    "location": "50 South Main Street",
+                    "description": "Enjoy beautiful choreographed fountain shows - with magical fire accents after dusk - at the Transcend fountain in Richards Court (just outside Nordstrom).",
+                    "image": "shopping-center-fountain.webp",
                     "active": true
                 },
 
                 {
                     "id": 2,
-                    "title": "test",
-                    "date": "12/31/2026",
-                    "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": false
+                    "title": "Fish Feeding",
+                    "date": "Every Saturday at City Creek",
+                    "location": "50 South Main Street",
+                    "description": "Bring your kids to City Creek Center every Saturday at 10:00 AM for our weekly Fish Feeding! Watch the fish swim up for their favorite treat and enjoy a fun, family-friendly experience. Located on Level 1, East Block (near Customer Service Desk). ",
+                    "image": "kids-fish-feeding.webp",
+                    "active": true
                 }
             ]
         },
@@ -46,22 +46,22 @@
             "events": [
                 {
                     "id": 1,
-                    "title": "test",
-                    "date": "12/31/2026",
-                    "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "title": "Giant Pumpkinpalooza + Zombie Walk",
+                    "date": "10/10/2026",
+                    "location": "At The Gateway",
+                    "description": "The fourth annual Giant Pumpkinpalooza and Zombie Walk is a family friendly event celebrating the fall harvest and all the things you love about Halloween and October. It is designed to bring the community together to have fun and support local businesses.",
+                    "image": "giant-pumpkinpalooza.webp",
                     "active": true
                 },
 
                 {
                     "id": 2,
-                    "title": "test",
-                    "date": "12/31/2026",
-                    "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": false
+                    "title": "Salt Lake Book Festival",
+                    "date": "10/17/2026",
+                    "location": "At The Gateway",
+                    "description": "The Salt Lake Book Festival started with a simple belief: the best thing a book can do is find the right person at the right moment. We built the festival to create more of those moments — live, in person, in the heart of Salt Lake.",
+                    "image": "salt-lake-book-festival.webp",
+                    "active": true
                 }
             ]
         },
@@ -82,9 +82,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -92,8 +92,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
@@ -116,9 +116,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -126,8 +126,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
@@ -149,9 +149,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -159,8 +159,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
@@ -182,9 +182,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -192,8 +192,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
@@ -215,9 +215,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -225,8 +225,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
@@ -248,9 +248,9 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
-                    "active": true
+                    "description": "test event description",
+                    "image": "",
+                    "active": false
                 },
 
                 {
@@ -258,8 +258,8 @@
                     "title": "test",
                     "date": "12/31/2026",
                     "location": "100 test street",
-                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
-                    "image": "citycreek.jpg",
+                    "description": "test event description",
+                    "image": "",
                     "active": false
                 }
             ]
