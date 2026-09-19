@@ -1,7 +1,12 @@
 @media screen and (min-width: 640px) {
 
+    /* =========================
+       HEADER
+       ========================= */
+
     header {
         grid-template-columns: auto 1fr auto;
+
         gap: 1rem;
     }
 
@@ -13,6 +18,7 @@
     nav {
         grid-column: 2;
         grid-row: 1;
+
         width: auto;
     }
 
@@ -21,10 +27,17 @@
         grid-row: 1;
     }
 
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
     .navigation {
         display: flex;
         flex-direction: row;
+
         justify-content: flex-end;
+
         margin: 0;
     }
 
@@ -40,74 +53,169 @@
         display: none;
     }
 
-    #members.grid {
-        grid-template-columns: repeat(3, 1fr);
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero img {
+        height: 450px;
     }
 
-    .card-content {
-        grid-template-columns: 100px minmax(0, 1fr);
-        gap: 0.75rem;
-        padding: 0.75rem;
+    .hero-content h1 {
+        font-size: 3rem;
     }
 
-    .member-card img {
-        width: 100px;
-        height: 80px;
+    .hero-content p {
+        font-size: 1.2rem;
     }
 
-    .business-info p {
-        font-size: 0.8rem;
+    .hero-btns {
+        flex-direction: row;
+
+        justify-content: center;
     }
 
-    #members.list .member-card {
-        display: grid;
-        grid-template-columns: 1.3fr 3.7fr;
-        align-items: center;
-        padding: 0.7rem 1rem;
-        min-height: 0;
+    .join-btn,
+    .discover-btn {
+        width: auto;
+
+        min-width: 180px;
     }
 
-    #members.list .member-card h2 {
-        margin: 0;
-        padding: 0;
-        background: none;
-        border: none;
-        font-size: 1rem;
-        text-align: left;
+
+    /* =========================
+       ABOUT
+       ========================= */
+
+    .about-section {
+        padding: 2rem 3rem;
     }
 
-    #members.list .card-content {
-        display: block;
-        padding: 0;
-    }
 
-    #members.list img {
-        display: none;
-    }
+    /* =========================
+       EVENTS
+       ========================= */
 
-    #members.list .business-info {
-        display: grid;
-        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 2fr);
-        align-items: center;
+    .event-slider {
         gap: 1rem;
     }
 
-    #members.list .business-info p {
-        margin: 0;
-        font-size: 0.8rem;
-        overflow-wrap: anywhere;
+    .event-card {
+        display: grid;
+
+        grid-template-columns: 1fr 1.4fr;
+
+        min-height: 280px;
     }
+
+    #event-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .event-info {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 2rem;
+
+        text-align: left;
+    }
+
+    .event-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .event-arrow {
+        width: 50px;
+        height: 70px;
+    }
+
+
+    /* =========================
+       WEATHER
+       ========================= */
+
+    .weather-grid {
+        grid-template-columns: 1fr 1.4fr;
+
+        align-items: stretch;
+    }
+
+    .current-weather,
+    .forecast {
+        padding: 1.5rem;
+    }
+
+    .current-weather {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    #current-weather-icon {
+        width: 110px;
+        height: 110px;
+    }
+
+    .current-temperature {
+        font-size: 2.5rem;
+    }
+
+    .forecast-day {
+        grid-template-columns:
+            1fr
+            60px
+            1.5fr
+            1fr;
+
+        gap: 1rem;
+    }
+
+    .forecast-description {
+        font-size: 0.9rem;
+    }
+
+
+    /* =========================
+       MEMBER SPOTLIGHTS
+       ========================= */
+
+    .spotlights {
+        grid-template-columns:
+            repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .spotlight-card img {
+        height: 220px;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
         display: grid;
+
         grid-template-columns: 1fr 1fr 1fr;
+
         align-items: center;
+
         gap: 2rem;
+
         text-align: left;
     }
 
     .social-media {
         justify-content: center;
+
         margin: 0;
     }
 }

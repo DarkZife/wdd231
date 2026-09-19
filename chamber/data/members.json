@@ -8,7 +8,29 @@
             "email": "info@testcitycreek.com",
             "image": "citycreek.jpg",
             "membership": 3,
-            "description": "A major shopping and dining destination in downtown Salt Lake City."
+            "description": "A major shopping and dining destination in downtown Salt Lake City.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         },
 
         {
@@ -19,7 +41,29 @@
             "email": "info@testgateway.com",
             "image": "gateway.jpg",
             "membership": 2,
-            "description": "A downtown destination featuring shopping, dining, entertainment, and events."
+            "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         },
 
         {
@@ -30,7 +74,29 @@
             "email": "info@testclarkplanetarium.com",
             "image": "planetarium.jpg",
             "membership": 2,
-            "description": "A science museum and planetarium featuring space exhibits and theater experiences."
+            "description": "A science museum and planetarium featuring space exhibits and theater experiences.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
 
         },
 
@@ -42,7 +108,62 @@
             "email": "info@testsaltpalace.com",
             "image": "salt-palace.jpg",
             "membership": 3,
-            "description": "A large downtown convention center hosting conferences, events, and exhibitions."
+            "description": "A large downtown convention center hosting conferences, events, and exhibitions.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
+        },
+
+        {
+            "name": "Delta Center",
+            "address": "301 S Temple, Salt Lake City, UT 84101",
+            "phone": "(801) 325-2000",
+            "website": "https://www.deltacenter.com",
+            "email": "info@testdeltacenter.com",
+            "image": "gateway.jpg",
+            "membership": 3,
+            "description": "Delta Center is an indoor venue in Salt Lake City. Opened in 1991, the arena is the home of the Utah Jazz of the National Basketball Association and the Utah Mammoth of the National Hockey League.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         },
 
         {
@@ -53,7 +174,29 @@
             "email": "info@testwayne.com",
             "image": "wayne-tower.png",
             "membership": 3,
-            "description": "A fictional technology, transportation, and industrial corporation."
+            "description": "A fictional technology, transportation, and industrial corporation.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         },
 
         {
@@ -64,7 +207,29 @@
             "email": "info@teststark.com",
             "image": "stark-industries.png",
             "membership": 3,
-            "description": "A fictional advanced technology and clean-energy company."
+            "description": "A fictional advanced technology and clean-energy company.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         },
 
         {
@@ -75,7 +240,29 @@
             "email": "info@testoscorp.com",
             "image": "oscorp.png",
             "membership": 1,
-            "description": "A fictional biotechnology and advanced research company."
+            "description": "A fictional biotechnology and advanced research company.",
+
+            "events": [
+                {
+                    "id": 1,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": true
+                },
+
+                {
+                    "id": 2,
+                    "title": "test",
+                    "date": "12/31/2026",
+                    "location": "100 test street",
+                    "description": "A downtown destination featuring shopping, dining, entertainment, and events.",
+                    "image": "citycreek.jpg",
+                    "active": false
+                }
+            ]
         }
     ]
 }

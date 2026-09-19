@@ -11,7 +11,7 @@
     <meta property="og:title" content="Salt Lake City Chamber of Commerce Home Page">
     <meta property="og:description" content="The Salt Lake City Chamber of Commerce.">
     <meta property="og:image" content="https://darkzife.github.io/wdd231/chamber/images/coc-logo.png">
-    <meta property="og:url" content="https://darkzife.github.io/wdd231/chamber/home.html">
+    <meta property="og:url" content="https://darkzife.github.io/wdd231/chamber/index.html">
 
     <title>Salt Lake City Chamber of Commerce | Home Page</title>
 
@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="styles/homesmall.css">
     <link rel="stylesheet" href="styles/homelarge.css">
 
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/home-main.mjs"></script>
+
 </head>
 
 <body>
@@ -57,29 +58,116 @@
 
     <main>
 
-        <section class="banner">
+        <section class="hero">
+
+            <img src="images/banner.png" alt="Salt Lake City Banner">
+
+            <div class="hero-content">
+
+                <h1>Salt Lake City</h1>
+
+                <p>Connecting businesses. Building Community</p>
+
+                <div class="hero-btns">
+                    <a href="join.html" id="join-btn">Join the Chamber</a>
+                    <a href="discover.html" id="discover-btn">Discover Members</a>
+                </div>
 
 
-
-        </section>
-
-        <section class="about">
-
-
-        </section>
-
-        <section class="weather">
-
-        </section>
-
-        <section class="spotlight">
-
-        </section>
-
-        <section class="events">
+            </div>
 
         </section>
 
+        <section class="about-section">
+
+            <h2>Supporting Salt Lake City Businesses</h2>
+
+            <p>The Salt Lake City Chamber of Commerce connects businesses throughout the community and provides opportunities for networking, growth, and local economic development.</p>
+
+        </section>
+
+        <section class="events-section">
+
+            <h2>Current Events</h2>
+
+            <div class="event-slider">
+
+                <button id="previous-event" class="event-arrow" aria-label="Previous event">&#10094;</button>
+
+                <article id="event-card" class="event-card">
+
+                    <img id="event-image" src="" alt="" hidden>
+
+                    <div class="event-info">
+
+                        <h3 id="event-title">Loading Events...</h3>
+
+                        <p id="event-date"></p>
+                        <p id="event-location"></p>
+                        <p id="event-description"></p>
+
+                    </div>
+
+                </article>
+
+                <button id="next-event" class="event-arrow" aria-label="Next event">&#10095;</button>
+            </div>
+
+        </section>
+
+        <section class="weather-section">
+
+            <h2>Salt Lake City Weather</h2>
+
+            <div class="weather-grid">
+
+                <section class="current-weather">
+
+                    <h3>Current Weather</h3>
+
+                    <p class="weather-location">Salt Lake City, Utah</p>
+
+                    <div class="current-weather-main">
+
+                        <img id="current-weather-icon" alt="" hidden>
+
+                        <div>
+
+                            <p class="current-temperature"><span id="current-temp">--</span>°F</p>
+                            <p id="current-description">Loading weather...</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="temperature-range">
+
+                        <p>High: <span id="current-high">--</span>°F</p>
+                        <p>Low: <span id="current-low">--</span>°F</p>
+
+                    </div>
+
+                </section>
+
+                <section class="forecast">
+
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="forecast-list" class="forecast-list"></div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section class="spotlight-section">
+
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights" class="spotlights"></div>
+
+        </section>
 
 
     </main>
