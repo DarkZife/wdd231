@@ -63,6 +63,7 @@ header {
 .branding img {
     width: 55px;
     height: 55px;
+
     object-fit: contain;
 }
 
@@ -86,15 +87,20 @@ header {
 #menu {
     border: none;
     background: none;
+
     color: white;
+
     font-size: 1.5rem;
+
     cursor: pointer;
+
     padding: 0.4rem;
 }
 
 #theme-toggle:hover,
 #menu:hover {
     background-color: rgba(255, 255, 255, 0.15);
+
     border-radius: 5px;
 }
 
@@ -111,7 +117,9 @@ nav {
 .navigation {
     display: none;
     flex-direction: column;
+
     list-style: none;
+
     margin: 1rem 0 0;
     padding: 0;
 }
@@ -126,9 +134,12 @@ nav {
 
 .navigation a {
     display: block;
+
     padding: 0.8rem;
+
     text-align: center;
     text-decoration: none;
+
     color: white;
 }
 
@@ -146,8 +157,10 @@ nav {
 main {
     width: 100%;
     max-width: 1200px;
+
     margin: 0 auto;
     padding: 1rem;
+
     flex: 1;
 }
 
@@ -158,6 +171,7 @@ main {
 
 .join-section {
     max-width: 950px;
+
     margin: 0 auto;
     padding: 1.5rem;
 
@@ -174,6 +188,7 @@ main {
     margin-bottom: 1.5rem;
 
     text-align: center;
+
     color: var(--primary-color);
 }
 
@@ -185,7 +200,9 @@ main {
 .join-content {
     display: grid;
     grid-template-columns: 1fr;
+
     gap: 2rem;
+
     align-items: start;
 }
 
@@ -201,13 +218,16 @@ form {
 
 form label {
     display: block;
+
     margin-bottom: 1rem;
+
     font-weight: 600;
 }
 
 form input,
 form textarea {
     display: block;
+
     width: 100%;
 
     margin-top: 0.4rem;
@@ -230,6 +250,7 @@ form textarea:focus {
 
 form textarea {
     min-height: 120px;
+
     resize: vertical;
 }
 
@@ -248,25 +269,33 @@ form textarea {
 
 .membership-options legend {
     padding: 0 0.5rem;
+
     font-weight: 700;
+
     color: var(--primary-color);
 }
 
 .membership-options label {
     display: flex;
+
     align-items: center;
+
     gap: 0.5rem;
+
     margin-bottom: 0.75rem;
 }
 
 .membership-options input[type="radio"] {
     width: auto;
+
     margin: 0;
 }
 
 .membership-options a {
     color: var(--primary-color);
+
     text-decoration: underline;
+
     font-weight: 600;
 }
 
@@ -276,6 +305,7 @@ form textarea {
 
 .membership-options p {
     margin: 0.75rem 0 0;
+
     font-size: 0.95rem;
 }
 
@@ -284,13 +314,13 @@ form textarea {
    SUBMIT BUTTON
    ========================= */
 
-.join-section > button[type="submit"] {
-    display: block;
+form button[type="submit"] {
+    align-self: center;
 
     width: 220px;
     max-width: 100%;
 
-    margin: 2rem auto 0;
+    margin: 1.5rem auto 0;
     padding: 0.85rem 1rem;
 
     border: none;
@@ -310,9 +340,10 @@ form textarea {
         transform 0.2s ease;
 }
 
-.join-section > button[type="submit"]:hover {
+form button[type="submit"]:hover {
     background-color: var(--accent-color);
     color: #111111;
+
     transform: translateY(-2px);
 }
 
@@ -324,6 +355,7 @@ form textarea {
 .membership-cards {
     display: grid;
     grid-template-columns: 1fr;
+
     gap: 1rem;
 }
 
@@ -345,11 +377,13 @@ form textarea {
     margin-bottom: 0.75rem;
 
     color: var(--primary-color);
+
     font-size: 1.15rem;
 }
 
 .membership-card a {
     color: var(--primary-color);
+
     font-weight: 600;
     text-decoration: underline;
 }
@@ -360,57 +394,14 @@ form textarea {
 
 
 /* =========================
-   DIALOG
+   SHIMMER TITLES
    ========================= */
-
-#membership-details {
-    width: 90%;
-    max-width: 500px;
-
-    padding: 1.5rem;
-
-    border: none;
-    border-radius: 8px;
-
-    background-color: var(--card-color);
-    color: var(--text-color);
-
-    box-shadow: 0 4px 16px var(--shadow-color);
-}
-
-#membership-details::backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-#membership-details h2 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
-
-#membership-details p {
-    line-height: 1.5;
-}
-
-#membership-details ul {
-    padding-left: 1.5rem;
-}
-
-#membership-details li {
-    margin-bottom: 0.5rem;
-}
-
-#close-modal {
-    float: right;
-    border: none;
-    background: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
 
 .bronze-title,
 .silver-title,
 .gold-title {
     background-size: 200% auto;
+
     background-clip: text;
     -webkit-background-clip: text;
 
@@ -465,6 +456,59 @@ form textarea {
 
 
 /* =========================
+   DIALOG
+   ========================= */
+
+#membership-details {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 1.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--card-color);
+    color: var(--text-color);
+
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+#membership-details::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#membership-details h2 {
+    margin-top: 0;
+
+    color: var(--primary-color);
+}
+
+#membership-details p {
+    line-height: 1.5;
+}
+
+#membership-details ul {
+    padding-left: 1.5rem;
+}
+
+#membership-details li {
+    margin-bottom: 0.5rem;
+}
+
+#close-modal {
+    float: right;
+
+    border: none;
+    background: none;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}
+
+
+/* =========================
    FOOTER
    ========================= */
 
@@ -489,15 +533,19 @@ footer p {
 
 .social-media {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 1rem;
+
     margin: 1.5rem 0;
 }
 
 .social-media img {
     width: 36px;
     height: 36px;
+
     object-fit: contain;
 }
 
@@ -525,7 +573,6 @@ body.dark #membership-details {
 
 body.dark .join-section h1,
 body.dark .membership-options legend,
-body.dark .membership-card h2,
 body.dark #membership-details h2 {
     color: var(--accent-color);
 }
@@ -534,6 +581,7 @@ body.dark form input,
 body.dark form textarea {
     background-color: #18131c;
     color: var(--text-color);
+
     border-color: var(--border-color);
 }
 

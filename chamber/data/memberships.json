@@ -1,7 +1,7 @@
 {
     "memberships": [
         {
-            "id": "free",
+            "id": "np",
             "name": "Free Membership",
             "price": "Free",
             "benefits": [
