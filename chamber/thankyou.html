@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Home Page for the Salt Lake City Chamber of Commerce.">
+    <meta name="author" content="Logan Dawes">
+
+    <meta property="og:title" content="Salt Lake City Chamber of Commerce Home Page">
+    <meta property="og:description" content="Explore Salt Lake City businesses, community events, local weather, and Chamber membership opportunities.">
+    <meta property="og:image" content="https://darkzife.github.io/wdd231/chamber/images/coc-logo.png">
+    <meta property="og:url" content="https://darkzife.github.io/wdd231/chamber/index.html">
+
+    <title>Salt Lake City Chamber of Commerce | Home Page</title>
+
+    <link rel="icon" href="images/beehive.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thankyousmall.css">
+    <link rel="stylesheet" href="styles/thankyoularge.css">
+
+    <script type="module" src="scripts/thankyou-main.mjs"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="branding">
+            <img src="images/coc-logo.png" alt="Salt Lake City Chamber logo">
+            <span>Salt Lake City Chamber of Commerce</span>
+        </div>
+
+        <div class="header-buttons">
+            <button id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+            <button id="menu" aria-label="Open navigation menu">☰</button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html" class="active">Join the Chamber</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="thankyou-section">
+
+            <h1>Thank You!</h1>
+
+            <p>Thank you for applying to join the Salt Lake City Chamber of Commerce.</p>
+
+            <div class="submitted-info">
+
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+
+                <p><strong>Email:</strong> <span id="email"></span></p>
+
+                <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+
+                <p><strong>Business / Organization:</strong> <span id="organization"></span></p>
+
+                <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+
+        <div>
+            <strong>Salt Lake City Chamber of Commerce</strong>
+            <p>201 South Main Street</p>
+            <p>Salt Lake City, Utah 84111</p>
+            <p>info@exampleslcchamber.org</p>
+            <p>(000) 000-0000</p>
+        </div>
+
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/" aria-label="A link to the facebook page.">
+                <img src="images/facebook.png" alt="Facebook logo">
+            </a>
+
+            <a href="https://www.linkedin.com" aria-label="A link to the LinkedIn page.">
+                <img src="images/linkedin.png" alt="LinkedIn logo">
+            </a>
+
+            <a href="https://www.instagram.com/" aria-label="A link to the Instagram page.">
+                <img src="images/instagram.png" alt="Instagram logo">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Logan Dawes</p>
+            <p>&copy; <span id="currentYear"></span> Salt Lake City Chamber of Commerce</p>
+            <p id="lastModified">Last modified:</p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Home Page for the Salt Lake City Chamber of Commerce.">
+    <meta name="author" content="Logan Dawes">
+
+    <meta property="og:title" content="Salt Lake City Chamber of Commerce Home Page">
+    <meta property="og:description" content="Explore Salt Lake City businesses, community events, local weather, and Chamber membership opportunities.">
+    <meta property="og:image" content="https://darkzife.github.io/wdd231/chamber/images/coc-logo.png">
+    <meta property="og:url" content="https://darkzife.github.io/wdd231/chamber/index.html">
+
+    <title>Salt Lake City Chamber of Commerce | Home Page</title>
+
+    <link rel="icon" href="images/beehive.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/joinsmall.css">
+    <link rel="stylesheet" href="styles/joinlarge.css">
+
+    <script type="module" src="scripts/join-main.mjs"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="branding">
+            <img src="images/coc-logo.png" alt="Salt Lake City Chamber logo">
+            <span>Salt Lake City Chamber of Commerce</span>
+        </div>
+
+        <div class="header-buttons">
+            <button id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+            <button id="menu" aria-label="Open navigation menu">☰</button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html" class="active">Join the Chamber</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+   <main>
+
+        <section class="join-section">
+
+            <h1>Join the Chamber</h1>
+
+            <div class="join-content">
+
+                <form id="join-form" method="get" action="thankyou.html">
+
+                    <label>
+                        First Name
+                        <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organization-title" title="Enter your organizational title using only letters, spaces, and hyphens" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Enter in your email address" autocomplete="email" placeholder="test@email.com" required>
+                    </label>
+
+                    <label>
+                        Phone Number
+                        <input type="tel" name="phone" title="Enter in your phone number" autocomplete="tel" pattern="[0-9()+\s-]+" required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input type="text" name="organization" title="Enter in your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <fieldset class="membership-options">
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="free" required>
+                            <a href="#" class="membership-link" data-membership="free">Free Membership</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            <a href="#" class="membership-link" data-membership="bronze">Bronze Membership</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            <a href="#" class="membership-link" data-membership="silver">Silver Membership</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            <a href="#" class="membership-link" data-membership="gold">Gold Membership</a>
+                        </label>
+
+                        <p>Click each membership for more info.</p>
+
+                    </fieldset>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea name="description" title="Enter a description of your business or organization"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                </form>
+
+
+                <section class="membership-cards">
+
+                    <div class="membership-card">
+                        <h2>Free Membership</h2>
+                        <a href="#" class="membership-link" data-membership="free">Learn More</a>
+                    </div>
+
+                    <div class="membership-card">
+                        <h2 class="bronze-title">Bronze Membership</h2>
+                        <a href="#" class="membership-link" data-membership="bronze">Learn More</a>
+                    </div>
+
+                    <div class="membership-card">
+                        <h2 class="silver-title">Silver Membership</h2>
+                        <a href="#" class="membership-link" data-membership="silver">Learn More</a>
+                    </div>
+
+                    <div class="membership-card">
+                        <h2 class="gold-title">Gold Membership</h2>
+                        <a href="#" class="membership-link" data-membership="gold">Learn More</a>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <button type="submit" form="join-form">Submit Application</button>
+
+        </section>
+
+        <dialog id="membership-details"></dialog>
+
+    </main>
+
+
+    <footer>
+
+
+        <div>
+            <strong>Salt Lake City Chamber of Commerce</strong>
+            <p>201 South Main Street</p>
+            <p>Salt Lake City, Utah 84111</p>
+            <p>info@exampleslcchamber.org</p>
+            <p>(000) 000-0000</p>
+        </div>
+
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/" aria-label="A link to the facebook page.">
+                <img src="images/facebook.png" alt="Facebook logo">
+            </a>
+
+            <a href="https://www.linkedin.com" aria-label="A link to the LinkedIn page.">
+                <img src="images/linkedin.png" alt="LinkedIn logo">
+            </a>
+
+            <a href="https://www.instagram.com/" aria-label="A link to the Instagram page.">
+                <img src="images/instagram.png" alt="Instagram logo">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Logan Dawes</p>
+            <p>&copy; <span id="currentYear"></span> Salt Lake City Chamber of Commerce</p>
+            <p id="lastModified">Last modified:</p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

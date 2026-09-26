@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5b2487;
+    --secondary-color: #f1eaf6;
+    --accent-color: #c9a7e8;
+
+    --background-color: #ffffff;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --border-color: #cccccc;
+
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    padding: 1rem;
+
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* =========================
+   BRANDING
+   ========================= */
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.branding img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.branding span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HEADER BUTTONS
+   ========================= */
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#theme-toggle,
+#menu {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+#theme-toggle:hover,
+#menu:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--accent-color);
+    color: #111111;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+}
+
+
+/* =========================
+   JOIN SECTION
+   ========================= */
+
+.join-section {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.join-section h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   JOIN CONTENT
+   ========================= */
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+
+    margin-top: 0.4rem;
+    padding: 0.75rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =========================
+   MEMBERSHIP OPTIONS
+   ========================= */
+
+.membership-options {
+    margin: 1.5rem 0;
+    padding: 1rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.membership-options legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.membership-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.membership-options input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.membership-options a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.membership-options a:hover {
+    color: var(--accent-color);
+}
+
+.membership-options p {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+   ========================= */
+
+.join-section > button[type="submit"] {
+    display: block;
+
+    width: 220px;
+    max-width: 100%;
+
+    margin: 2rem auto 0;
+    padding: 0.85rem 1rem;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.join-section > button[type="submit"]:hover {
+    background-color: var(--accent-color);
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MEMBERSHIP CARDS
+   ========================= */
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.25rem;
+
+    text-align: center;
+
+    background-color: var(--secondary-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.membership-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+
+    color: var(--primary-color);
+    font-size: 1.15rem;
+}
+
+.membership-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.membership-card a:hover {
+    color: var(--accent-color);
+}
+
+
+/* =========================
+   DIALOG
+   ========================= */
+
+#membership-details {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 1.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--card-color);
+    color: var(--text-color);
+
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+#membership-details::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#membership-details h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#membership-details p {
+    line-height: 1.5;
+}
+
+#membership-details ul {
+    padding-left: 1.5rem;
+}
+
+#membership-details li {
+    margin-bottom: 0.5rem;
+}
+
+#close-modal {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bronze-title,
+.silver-title,
+.gold-title {
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: title-shimmer 10s linear infinite;
+}
+
+.bronze-title {
+    background-image: linear-gradient(
+        90deg,
+        #8c5523,
+        #cd7f32,
+        #f0b06a,
+        #cd7f32,
+        #8c5523
+    );
+}
+
+.silver-title {
+    background-image: linear-gradient(
+        90deg,
+        #8f8f8f,
+        #c0c0c0,
+        #ffffff,
+        #c0c0c0,
+        #8f8f8f
+    );
+}
+
+.gold-title {
+    background-image: linear-gradient(
+        90deg,
+        #b8860b,
+        #d4af37,
+        #fff1a8,
+        #d4af37,
+        #b8860b
+    );
+}
+
+@keyframes title-shimmer {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-media img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark {
+    --background-color: #121212;
+    --card-color: #211827;
+    --text-color: #f3f3f3;
+    --border-color: #5f4a6d;
+    --secondary-color: #302238;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark .join-section,
+body.dark #membership-details {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+body.dark .join-section h1,
+body.dark .membership-options legend,
+body.dark .membership-card h2,
+body.dark #membership-details h2 {
+    color: var(--accent-color);
+}
+
+body.dark form input,
+body.dark form textarea {
+    background-color: #18131c;
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+body.dark .membership-card {
+    background-color: var(--secondary-color);
+}
+
+body.dark .membership-options a,
+body.dark .membership-card a {
+    color: #d7b7f2;
+}

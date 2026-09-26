@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5b2487;
+    --secondary-color: #f1eaf6;
+    --accent-color: #c9a7e8;
+
+    --background-color: #ffffff;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --border-color: #cccccc;
+
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    padding: 1rem;
+
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* =========================
+   BRANDING
+   ========================= */
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.branding img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+.branding span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HEADER BUTTONS
+   ========================= */
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#theme-toggle,
+#menu {
+    border: none;
+    background: none;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    padding: 0.4rem;
+}
+
+#theme-toggle:hover,
+#menu:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+
+    list-style: none;
+
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+
+    padding: 0.8rem;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--accent-color);
+    color: #111111;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   THANK YOU SECTION
+   ========================= */
+
+.thankyou-section {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 1rem auto;
+    padding: 1.5rem;
+
+    text-align: center;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.thankyou-section h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    color: var(--primary-color);
+}
+
+.thankyou-section > p {
+    margin-bottom: 1.5rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SUBMITTED INFORMATION
+   ========================= */
+
+.submitted-info {
+    padding: 1.25rem;
+
+    text-align: left;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 8px;
+}
+
+.submitted-info p {
+    margin: 0.75rem 0;
+
+    line-height: 1.5;
+}
+
+.submitted-info strong {
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
+.social-media {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin: 1.5rem 0;
+}
+
+.social-media img {
+    width: 36px;
+    height: 36px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark {
+    --background-color: #121212;
+    --card-color: #211827;
+    --text-color: #f3f3f3;
+    --border-color: #5f4a6d;
+    --secondary-color: #302238;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark .thankyou-section {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+body.dark .thankyou-section h1 {
+    color: var(--accent-color);
+}
+
+body.dark .submitted-info {
+    background-color: var(--secondary-color);
+}
+
+body.dark .submitted-info strong {
+    color: var(--accent-color);
+}

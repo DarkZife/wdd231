@@ -1,0 +1,48 @@
+{
+    "memberships": [
+        {
+            "id": "free",
+            "name": "Free Membership",
+            "price": "Free",
+            "benefits": [
+                "Listing in the Salt Lake City Chamber business directory",
+                "Monthly local business newsletter",
+                "Invitations to select networking events"
+            ]
+        },
+        {
+            "id": "bronze",
+            "name": "Bronze Membership",
+            "price": "$150 per year",
+            "benefits": [
+                "All Free Membership benefits",
+                "Discounted Chamber event tickets",
+                "One social media business spotlight",
+                "Entry into Utah Jazz ticket giveaways"
+            ]
+        },
+        {
+            "id": "silver",
+            "name": "Silver Membership",
+            "price": "$350 per year",
+            "benefits": [
+                "All Bronze Membership benefits",
+                "Two homepage business spotlights per year",
+                "Priority booth selection at local business expos",
+                "Discounts for select Utah restaurants and activities"
+            ]
+        },
+        {
+            "id": "gold",
+            "name": "Gold Membership",
+            "price": "$750 per year",
+            "benefits": [
+                "All Silver Membership benefits",
+                "Featured placement in the Chamber directory",
+                "VIP access to select Chamber events",
+                "Premium Salt Lake City event and sports ticket giveaways",
+                "Invitations to exclusive downtown networking events"
+            ]
+        }
+    ]
+}
