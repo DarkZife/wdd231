@@ -1,0 +1,156 @@
+@media screen and (min-width: 1025px) {
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+        grid-template-columns: auto 1fr auto;
+
+        gap: 1rem;
+
+        padding: 1rem 2rem;
+    }
+
+    .branding {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 1;
+
+        width: auto;
+    }
+
+    .header-buttons {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: flex-end;
+
+        margin: 0;
+    }
+
+    .navigation li {
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    /* =========================
+       MAIN
+       ========================= */
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+    /* =========================
+       INTRO
+       ========================= */
+
+    .discover-intro {
+        padding: 2rem 3rem;
+    }
+
+
+    /* =========================
+       DISCOVER GRID
+       ========================= */
+
+    .discover-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        grid-template-areas:
+            "a a b"
+            "c d b"
+            "e f f"
+            "g g h";
+
+        gap: 1.5rem;
+    }
+
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .discover-card img {
+        height: 230px;
+
+        transition:
+            transform 0.3s ease,
+            filter 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+
+        filter: brightness(1.08);
+
+        opacity: 0.95;
+    }
+
+    .discover-card h2 {
+        font-size: 1.35rem;
+    }
+
+    .discover-card address {
+        font-size: 0.95rem;
+    }
+
+    .discover-card p {
+        font-size: 1rem;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        align-items: center;
+
+        gap: 2rem;
+
+        padding: 2rem;
+
+        text-align: left;
+    }
+
+    .social-media {
+        justify-content: center;
+
+        margin: 0;
+    }
+}
